@@ -14,7 +14,7 @@ plugins {
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 
-def libVersionCode = '2.0.5.1'
+def libVersionCode = '2.0.3'
 def siteUrl = 'https://github.com/dlazaro66/QRCodeReaderView/tree/master/QRCodeReaderView-lib'
 def gitUrl = 'https://github.com/dlazaro66/QRCodeReaderView/tree/master/QRCodeReaderView-lib.git'
 
@@ -51,38 +51,6 @@ dependencies {
     testImplementation "org.robolectric:robolectric:4.8"
 }
 
-//install {
-//  repositories.mavenInstaller {
-//    pom {
-//      project {
-//        packaging 'aar'
-//        name 'QRCodeReaderView'
-//        description =
-//            'Android view which show camera and notify when there\'s a QR code inside the preview.'
-//        url siteUrl
-//        licenses {
-//          license {
-//            name 'The Apache Software License, Version 2.0'
-//            url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-//          }
-//        }
-//        developers {
-//          developer {
-//            id 'dlazaro66'
-//            name 'David Lázaro'
-//            email 'dlazaro66@gmail.com'
-//          }
-//        }
-//        scm {
-//          connection gitUrl
-//          developerConnection gitUrl
-//          url siteUrl
-//        }
-//      }
-//    }
-//  }
-//}
-
 afterEvaluate {
     publishing {
         publications {
@@ -90,7 +58,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.dlazaro66.qrcodereaderview'
                 artifactId = ''
-                version = '2.0.5.1'
+                version = '2.0.5.2'
             }
         }
     }
