@@ -14,7 +14,7 @@ plugins {
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 
-def libVersionCode = '2.0.5'
+def libVersionCode = '2.0.5.1'
 def siteUrl = 'https://github.com/dlazaro66/QRCodeReaderView/tree/master/QRCodeReaderView-lib'
 def gitUrl = 'https://github.com/dlazaro66/QRCodeReaderView/tree/master/QRCodeReaderView-lib.git'
 
@@ -90,7 +90,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.dlazaro66.qrcodereaderview'
                 artifactId = ''
-                version = '2.0.5'
+                version = '2.0.5.1'
             }
         }
     }
