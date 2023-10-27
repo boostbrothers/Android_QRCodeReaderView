@@ -89,7 +89,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.dlazaro66.qrcodereaderview'
-                artifactId = 'qrcodereaderview'
+                artifactId = ''
                 version = '2.0.4'
             }
         }
